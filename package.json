@@ -1,0 +1,19 @@
+{
+  "name": "portfolio-page",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smithros/portfolio-page.git"
+  },
+  "author": "Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smithros/portfolio-page/issues"
+  },
+  "homepage": "https://github.com/smithros/portfolio-page#readme"
+}
