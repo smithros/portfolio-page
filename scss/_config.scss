@@ -16,7 +16,7 @@ $background-opacity: 0.9;
       background-size: cover;
 
       &:after {
-        content: "";
+        content: '';
         position: absolute;
         top: 0;
         right: 0;
@@ -29,8 +29,16 @@ $background-opacity: 0.9;
   }
 }
 
-// Media Query Mixins
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
 
+// Media Query Mixins
 @mixin mediaSm {
   @media screen and (max-width: 500px) {
     @content;
@@ -48,7 +56,6 @@ $background-opacity: 0.9;
     @content;
   }
 }
-
 @mixin mediaXl {
   @media screen and (min-width: 1171px) {
     @content;
